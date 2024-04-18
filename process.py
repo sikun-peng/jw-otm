@@ -3,7 +3,7 @@ import random
 import time
 from data_processing import preprocess_data, aggregate_data, split_address
 from web_scraping import homestead_check
-from constant import A_TO_Z_CSV_PATH, ENABLE_HOMESTEAD_CHECK, ENABLE_VOTER_REGISTRATION_CHECK
+from constants import A_TO_Z_CSV_PATH, ENABLE_HOMESTEAD_CHECK, ENABLE_VOTER_REGISTRATION_CHECK
 
 def process_csv(a_to_z_csv_path = A_TO_Z_CSV_PATH,
         enable_homestead_check = ENABLE_HOMESTEAD_CHECK,

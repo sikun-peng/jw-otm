@@ -51,5 +51,7 @@ def aggregate_data(df):
     #df['Notes'] = df.apply(lambda row: row['Notes'] + 'owner name match' if row['Ownername'] == 'YES' else '', axis=1)
 
     df = df[['Full Name', 'House #', 'N/S/E/W', 'Street', 'Physical City', 'Physical State', 'Physical ZIP', 'Apt #', 'Phone', 'Latitude', 'Longitude', 'Notes']]
+    df = df.rename(columns={'Physical City': 'City', 'Physical State': 'State', 'Physical ZIP': 'Zip'})
+
 
     return df
