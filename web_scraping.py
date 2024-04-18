@@ -165,7 +165,7 @@ def homestead_check(df):
         zip_code = str(row['Physical ZIP'])
         if zip_code in TRAVIS_COUNTY_ZIP: 
             print("TRAVIS_COUNTY_ZIP to be supported")
-        else if zip_code in WILLIAMSON_COUNTY_ZIP:
+        elif zip_code in WILLIAMSON_COUNTY_ZIP:
             address = row['Physical Address'] + ', ' + row['Physical City'] + ', ' + str(row['Physical ZIP'])
             homestead_value, ownername_value = check_homestead_williamson(address, row['First Name'], row['Last Name'], index + 1, len(df))
             if homestead_value:
